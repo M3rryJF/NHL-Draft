@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Draft</title>
+  <link rel="stylesheet" href="style-draft.css">
+  <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <div class="background">
+    <img src='img/background2.png'>
+  </div>
+  <div class="container">
+    <div id="sidebar">
+      <ul class="teams">
+          <li>
+            <button id="ducks" class="button">
+              <span>ANAHEIM DUCKS</span>
+            </button>
+          </li>
+          <li>
+            <button id="coyotes" class="button">
+              <span>ARIZONA COYOTES</span>
+            </button>
+          </li>
+          <li>
+            <button id="bruins" class="button">
+              <span>BOSTON BRUINS</span>
+            </button>
+          </li>
+          <li>
+            <button id="sabres" class="button">
+              <span>BUFFALO SABRES</span>
+            </button>
+          </li>
+          <li>
+            <button id="flames" class="button">
+              <span>CALGARY FLAMES</span>
+            </button>
+          </li>
+          <li>
+            <button id="hurricanes" class="button">
+              <span>CAROLINA HURRICANES</span>
+            </button>
+          </li>
+          <li>
+            <button id="blackhawks" class="button">
+              <span>CHICAGO BLACKHAWKS</span>
+            </button>
+          </li>
+          <li>
+            <button id="avalanche" class="button">
+              <span>СOLORADO AVALANCHE</span>
+            </button>
+          </li>
+          <li>
+            <button id="jackets" class="button">
+              <span>COLUMBUS BLUE JACKETS</span>
+            </button>
+          </li>
+          <li>
+            <button id="stars" class="button">
+              <span>DALLAS STARS</span>
+            </button>
+          </li>
+          <li>
+            <button id="wings" class="button">
+              <span>DETROIT RED WINGS</span>
+            </button>
+          </li>
+          <li>
+            <button id="oilers" class="button">
+              <span>EDMONTON OILERS</span>
+            </button>
+          </li>
+          <li>
+            <button id="panthers" class="button">
+              <span>FLORIDA PANTHERS</span>
+            </button>
+          </li>
+          <li>
+            <button id="kings" class="button">
+              <span>LOS ANGELES KINGS</span>
+            </button>
+          </li>
+          <li>
+            <button id="wild" class="button">
+              <span>MINNESOTA WILD</span>
+            </button>
+          </li>
+          <li>
+            <button id="canadiens" class="button">
+              <span>MONTREAL CANADIENS</span>
+            </button>
+          </li>
+          <li>
+            <button id="predators" class="button">
+              <span>NASHVILLE PREDATORS</span>
+            </button>
+          </li>
+          <li>
+            <button id="devils" class="button">
+              <span>NEW JERSEY DEVILS</span>
+            </button>
+          </li>
+          <li>
+            <button id="islanders" class="button">
+              <span>NEW YORK ISLANDERS</span>
+            </button>
+          </li>
+          <li>
+            <button id="rangers" class="button">
+              <span>NEW YORK RANGERS</span>
+            </button>
+          </li>
+          <li>
+            <button id="senators" class="button">
+              <span>OTTAWA SENATORS</span>
+            </button>
+          </li>
+          <li>
+            <button id="flyers" class="button">
+              <span>PHILADELPHIA FLYERS</span>
+            </button>
+          </li>
+          <li>
+            <button id="penguins" class="button">
+              <span>PITTSBURGH PENGUINS</span>
+            </button>
+          </li>
+          <li>
+            <button id="sharks" class="button">
+              <span>SAN JOSE SHARKS</span>
+            </button>
+          </li>
+          <li>
+            <button id="kraken" class="button">
+              <span>SEATTLE KRAKEN</span>
+            </button>
+          </li>
+          <li>
+            <button id="blues" class="button">
+              <span>ST. LOUIS BLUES</span>
+            </button>
+          </li>
+          <li>
+            <button id="lightning" class="button">
+              <span>TAMPA BAY LIGHTNING</span>
+            </button>
+          </li>
+          <li>
+            <button id="leafs" class="button">
+              <span>TORONTO MAPLE LEAFS</span>
+            </button>
+          </li>
+          <li>
+            <button id="canucks" class="button">
+              <span>VANCOUVER CANUCKS</span>
+            </button>
+          </li>
+          <li>
+            <button id="knights" class="button">
+              <span>VEGAS GOLDEN KNIGHTS</span>
+            </button>
+          </li>
+          <li>
+            <button id="capitals" class="button">
+              <span>WASHINGTON CAPITALS</span>
+            </button>
+          </li>
+          <li>
+            <button id="jets" class="button">
+              <span>WINNIPEG JETS</span>
+            </button>
+          </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="trigger-area in"></div>
+      <div class="trigger-area2 out"></div>
+      <a href="#" data-toggle=".container" id="sidebar-toggle">
+        <p><i class="right"></i></p>
+      </a>
+        <div class="content">
+          <div id="header-line">
+
+            <h1>CUSTOM NHL DRAFT</h1>
+            <div class="line l1"></div>
+            <button onclick="document.location='mainmenu.html'" class="button-menu back">
+              <span>MENU</span>
+            </button>
+            <button class="button-menu his">
+              <span>HISTORY</span>
+            </button>
+            <button class="button-menu reg">
+              <span>REGISTRATION</span>
+            </button>
+            <button class="button-menu login">
+              <span>LOG IN</span>
+            </button>
+            <div class="line l2"></div>
+            <button class="button-menu make-draft">
+              <span>DRAFT</span>
+            </button>
+          </div>
+          <div class="table">
+            <div>
+              <span class="number one">1</span>
+              <div class="positionSquare logo-one-copy"></div>
+              <div class="number1 logo-one"></div>
+            </div>
+            <div>
+              <span class="number two">2</span>
+              <div class="positionSquare logo-two-copy"></div>
+              <div class="number1 logo-two"></div>
+            </div>
+            <div>
+              <span class="number three">3</span>
+              <div class="positionSquare logo-three-copy"></div>
+              <div class="number1 logo-three"></div>
+            </div>
+            <div>
+              <span class="number four">4</span>
+              <div class="positionSquare logo-four-copy"></div>
+              <div class="number1 logo-four"></div>
+            </div>
+            <div>
+              <span class="number five">5</span>
+              <div class="positionSquare logo-five-copy"></div>
+              <div class="number1 logo-five"></div>
+            </div>
+            <div>
+              <span class="number six">6</span>
+              <div class="positionSquare logo-six-copy"></div>
+              <div class="number1 logo-six"></div>
+            </div>
+            <div>
+              <span class="number seven">7</span>
+              <div class="positionSquare logo-seven-copy"></div>
+              <div class="number1 logo-seven"></div>
+            </div>
+            <div>
+              <span class="number eight">8</span>
+              <div class="positionSquare logo-eight-copy"></div>
+              <div class="number1 logo-eight"></div>
+            </div>
+            <div>
+              <span class="number nine">9</span>
+              <div class="positionSquare logo-nine-copy"></div>
+              <div class="number1 logo-nine"></div>
+            </div>
+            <div>
+              <span class="number ten">10</span>
+              <div class="positionSquare logo-ten-copy"></div>
+              <div class="number1 logo-ten"></div>
+            </div>
+            <div>
+              <span class="number eleven">11</span>
+              <div class="positionSquare logo-eleven-copy"></div>
+              <div class="number1 logo-eleven"></div>
+            </div>
+            <div>
+              <span class="number twelve">12</span>
+              <div class="positionSquare logo-twelve-copy"></div>
+              <div class="number1 logo-twelve"></div>
+            </div>
+            <div>
+              <span class="number thirteen">13</span>
+              <div class="positionSquare logo-thirteen-copy"></div>
+              <div class="number1 logo-thirteen"></div>
+            </div>
+            <div>
+              <span class="number fourteen">14</span>
+              <div class="positionSquare logo-fourteen-copy"></div>
+              <div class="number1 logo-fourteen"></div>
+            </div>
+            <div>
+              <span class="number fiveteen">15</span>
+              <div class="positionSquare logo-fiveteen-copy"></div>
+              <div class="number1 logo-fiveteen"></div>
+            </div>
+            <div>
+              <span class="number sixteen">16</span>
+              <div class="number1 logo-sixteen"></div>
+            </div>
+            <div>
+              <span class="number seventeen">17</span>
+              <div class="number1 logo-seventeen"></div>
+            </div>
+            <div>
+              <span class="number eighteen">18</span>
+              <div class="number1 logo-eighteen"></div>
+            </div>
+            <div>
+              <span class="number nineteen">19</span>
+              <div class="number1 logo-nineteen"></div>
+            </div>
+            <div>
+              <span class="number twenty">20</span>
+              <div class="number1 logo-twenty"></div>
+            </div>
+            <div>
+              <span class="number twenty-one">21</span>
+              <div class="number1 logo-twenty-one"></div>
+            </div>
+            <div>
+              <span class="number twenty-two">22</span>
+              <div class="number1 logo-twenty-two"></div>
+            </div>
+            <div>
+              <span class="number twenty-three">23</span>
+              <div class="number1 logo-twenty-three"></div>
+            </div>
+            <div>
+              <span class="number twenty-four">24</span>
+              <div class="number1 logo-twenty-four"></div>
+            </div>
+            <div>
+              <span class="number twenty-five">25</span>
+              <div class="number1 logo-twenty-five"></div>
+            </div>
+            <div>
+              <span class="number twenty-six">26</span>
+              <div class="number1 logo-twenty-six"></div>
+            </div>
+            <div>
+              <span class="number twenty-seven">27</span>
+              <div class="number1 logo-twenty-seven"></div>
+            </div>
+            <div>
+              <span class="number twenty-eight">28</span>
+              <div class="number1 logo-twenty-eight"></div>
+            </div>
+            <div>
+              <span class="number twenty-nine">29</span>
+              <div class="number1 logo-twenty-nine"></div>
+            </div>
+            <div>
+              <span class="number thirty">30</span>
+              <div class="number1 logo-thirty"></div>
+            </div>
+            <div>
+              <span class="number thirty-one">31</span>
+              <div class="number1 logo-thirty-one"></div>
+            </div>
+            <div>
+              <span class="number thirty-two">32</span>
+              <div class="number1 logo-thirty-two"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+    let color;
+    let nameToHide;
+
+    $("[data-toggle]").click(function() {
+      var toggle_el = $(this).data("toggle");
+      $(toggle_el).toggleClass("open-sidebar");
+    });
+
+    $( "div.in" ).mouseover(function() {
+      $( '#sidebar-toggle' ).offset({top: 446, left: 0});
+      $( "div.in" ).hide();
+    });
+
+    $( "div.out" ).mouseover(function() {
+      $( '#sidebar-toggle' ).offset({top: 446, left: -300});
+      $( "div.in" ).show();
+    });
+
+    $( ".button" ).click(
+      function() {
+        color = $( this ).css( "background-color" );
+        nameToHide = $( this ).attr( 'id' );
+      }
+    );
+
+    $( ".number1" ).click(
+      function() {
+        if ( $( this ).css( "background-color" ) === color ) {
+          alert("You already placed that team!")
+        } else if ( $( this ).css( "background-color" ) === 'rgb(33, 41, 50)' ) {
+          $( this ).css( "background-color", color);
+          color = 0;
+          $("#" + nameToHide ).hide();
+        }
+      }
+    )
+
+    $( ".make-draft" ).click(
+      function() {
+        let t1 = $( ".logo-one" );
+        let t2 = $( ".logo-two" );
+        let t3 = $( ".logo-three" );
+        let t4 = $( ".logo-four" );
+        let t5 = $( ".logo-five" );
+        let t6 = $( ".logo-six" );
+        let t7 = $( ".logo-seven" );
+        let t8 = $( ".logo-eight" );
+        let t9 = $( ".logo-nine" );
+        let t10 = $( ".logo-ten" );
+        let t11 = $( ".logo-eleven" );
+        let t12 = $( ".logo-twelve" );
+        let t13 = $( ".logo-thirteen" );
+        let t14 = $( ".logo-fourteen" );
+        let t15 = $( ".logo-fiveteen" );
+        let listChances = [];
+        let putAllOther = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15];
+
+        for (let i = 0; i < 74; i++) {
+          listChances.push(t1);
+        }
+        for (let i = 0; i < 54; i++) {
+          listChances.push(t2);
+        }
+        for (let i = 0; i < 46; i++) {
+          listChances.push(t3);
+        }
+        for (let i = 0; i < 38; i++) {
+          listChances.push(t4);
+        }
+        for (let i = 0; i < 34; i++) {
+          listChances.push(t5);
+        }
+        for (let i = 0; i < 30; i++) {
+          listChances.push(t6);
+        }
+        for (let i = 0; i < 26; i++) {
+          listChances.push(t7);
+        }
+        for (let i = 0; i < 24; i++) {
+          listChances.push(t8);
+        }
+        for (let i = 0; i < 20; i++) {
+          listChances.push(t9);
+        }
+        for (let i = 0; i < 14; i++) {
+          listChances.push(t10);
+        }
+        for (let i = 0; i < 12; i++) {
+          listChances.push(t11);
+        }
+        for (let i = 0; i < 10; i++) {
+          listChances.push(t12);
+        }
+        for (let i = 0; i < 8; i++) {
+          listChances.push(t13);
+        }
+        for (let i = 0; i < 6; i++) {
+          listChances.push(t14);
+        }
+        for (let i = 0; i < 4; i++) {
+          listChances.push(t15);
+        }
+
+        function shuffle(array) {
+          var currentIndex = array.length, temporaryValue, randomIndex;
+
+          while (0 !== currentIndex) {
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+          }
+
+          return array;
+        }
+
+        function removeItemAll(arr, value) {
+          let z = 0;
+          while (z < arr.length) {
+            if (arr[z] === value) {
+              arr.splice(z, 1);
+            } else {
+              ++z;
+            }
+          }
+          return arr;
+        }
+
+        let x = shuffle(listChances);
+        let putAll = shuffle(putAllOther);
+
+        let r1p1 = x[Math.floor(Math.random() * x.length)];
+        let pos1 = $( '.logo-one-copy' ).offset();
+        $( r1p1 ).offset({ left: pos1.left,  top: pos1.top });
+        removeItemAll(x, r1p1);
+        removeItemAll(putAllOther, r1p1);
+        let r1p2 = x[Math.floor(Math.random() * x.length)];
+        let pos2 = $( '.logo-two-copy' ).offset();
+        $( r1p2 ).offset({ left: pos2.left,  top: pos2.top });
+        removeItemAll(x, r1p2);
+        removeItemAll(putAllOther, r1p2);
+        let r1p3 = x[Math.floor(Math.random() * x.length)];
+        let pos3 = $( '.logo-three-copy' ).offset();
+        $( r1p3 ).offset({ left: pos3.left,  top: pos3.top });
+        removeItemAll(x, r1p3);
+        removeItemAll(putAllOther, r1p3);
+        let r1p4 = x[Math.floor(Math.random() * x.length)];
+        let pos4 = $( '.logo-four-copy' ).offset();
+        $( r1p4 ).offset({ left: pos4.left,  top: pos4.top });
+        removeItemAll(x, r1p4);
+        removeItemAll(putAllOther, r1p4);
+        let pos5 = $( '.logo-five-copy' ).offset();
+        let pos6 = $( '.logo-six-copy' ).offset();
+        let pos7 = $( '.logo-seven-copy' ).offset();
+        let pos8 = $( '.logo-eight-copy' ).offset();
+        let pos9 = $( '.logo-nine-copy' ).offset();
+        let pos10 = $( '.logo-ten-copy' ).offset();
+        let pos11 = $( '.logo-eleven-copy' ).offset();
+        let pos12 = $( '.logo-twelve-copy' ).offset();
+        let pos13 = $( '.logo-thirteen-copy' ).offset();
+        let pos14 = $( '.logo-fourteen-copy' ).offset();
+        let pos15 = $( '.logo-fiveteen-copy' ).offset();
+
+        let places = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+        let index = 0;
+
+        while (index < places.length) {
+          if (places[index] == 5) {
+            $( putAll[index] ).offset({ left: pos5.left, top: pos5.top });
+          } else if (places[index] == 6) {
+            $( putAll[index] ).offset({ left: pos6.left, top: pos6.top });
+          } else if (places[index] == 7) {
+            $( putAll[index] ).offset({ left: pos7.left, top: pos7.top });
+          } else if (places[index] == 8) {
+            $( putAll[index] ).offset({ left: pos8.left, top: pos8.top });
+          } else if (places[index] == 9) {
+            $( putAll[index] ).offset({ left: pos9.left, top: pos9.top });
+          } else if (places[index] == 10) {
+            $( putAll[index] ).offset({ left: pos10.left, top: pos10.top });
+          } else if (places[index] == 11) {
+            $( putAll[index] ).offset({ left: pos11.left, top: pos11.top });
+          } else if (places[index] == 12) {
+            $( putAll[index] ).offset({ left: pos12.left, top: pos12.top });
+          } else if (places[index] == 13) {
+            $( putAll[index] ).offset({ left: pos13.left, top: pos13.top });
+          } else if (places[index] == 14) {
+            $( putAll[index] ).offset({ left: pos14.left, top: pos14.top });
+          } else if (places[index] == 15) {
+            $( putAll[index] ).offset({ left: pos15.left, top: pos15.top });
+          }
+
+          index++;
+        }
+      }
+    )
+  });
+  </script>
+
+</body>
+</html>

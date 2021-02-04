@@ -1,0 +1,902 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@font-face {
+  font-family: Thedus-Wide;
+  src: url(fonts/Thedus-Wide.otf)
+}
+.background {
+  position: fixed;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: helvetica;
+  font-weight: 100;
+}
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  -webkit-transition:  left 0.4s ease-in-out;
+  -moz-transition:  left 0.4s ease-in-out;
+  -ms-transition:  left 0.4s ease-in-out;
+  -o-transition:  left 0.4s ease-in-out;
+  transition:  left 0.4s ease-in-out;
+}
+.container.open-sidebar {
+  left: 240px;
+}
+#sidebar {
+  background: #121212;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  left: -240px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#sidebar ul li {
+  margin: 0;
+}
+#sidebar ul li a {
+  padding: 6.66px 20px;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px dashed #F2E85E;
+  -webkit-transition:  background 0.3s ease-in-out;
+  -moz-transition:  background 0.3s ease-in-out;
+  -ms-transition:  background 0.3s ease-in-out;
+  -o-transition:  background 0.3s ease-in-out;
+  transition:  background 0.3s ease-in-out;
+}
+.main-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+.main-content .content{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.main-content .content h1{
+  position: absolute;
+  color: #fff;
+  font-family: Thedus-Wide;
+  font-size: 70px;
+  font-weight: 180px;
+  left: 36px;
+  top: -50px;
+}
+.main-content .content p{
+  width: 100%;
+  line-height: 160%;
+}
+.main-content #sidebar-toggle {
+  width: 1.5em;
+  height: 3em;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  position: relative;
+  background: #212932;
+  top: 47.5%;
+  left: -2%;
+  float: left;
+}
+.main-content #sidebar-toggle .right{
+  position: absolute;
+  border: solid #ffffff;
+  border-width: 0 2.8px 2.8px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  left: 4.8px;
+  top: 20px;
+}
+.main-content #sidebar-toggle .right:last-child{
+  margin-bottom: 0;
+}
+#header-line {
+  position: absolute;
+  background: #212121;
+  width: 100%;
+  height: 90px;
+  right: 0px;
+  top: 0px;
+}
+.button-menu {
+  position: absolute;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  height: 90px;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  background: #212121;
+}
+.button-menu:hover {
+  background: #212932;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.button-menu:active {
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.line {
+  background-color: #fff;
+  position: absolute;
+  width: 1px;
+  height: 90px;
+}
+.l1 {
+  left: 800px;
+}
+
+.l2 {
+  left: 1600px;
+}
+
+.back {
+  width: 200px;
+  left: 801px;
+}
+
+.his {
+  width: 200px;
+  left: 1001px;
+}
+
+.reg {
+  width: 200px;
+  left: 1201px;
+}
+
+.login {
+  width: 200px;
+  left: 1401px;
+}
+
+.make-draft {
+  width: 318px;
+  background: green;
+  left: 1601px;
+}
+
+.button-menu:hover.make-draft {
+  background: #066B02;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  position: absolute;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 240px;
+  height: 29px;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+#ducks.button {
+  background: #F47A38;
+}
+#ducks.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/anaheim.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#coyotes.button {
+  background: #8C2633;
+  top: 29px;
+}
+#coyotes.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/arizona.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#bruins.button {
+  background: #000000;
+  top: 58px;
+}
+#bruins.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/boston.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#sabres.button {
+  background: #003087;
+  top: 87px;
+}
+#sabres.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/buffalo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#flames.button {
+  background: #e51937;
+  top: 116px;
+}
+#flames.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/calgary.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#hurricanes.button {
+  background: #cc0000;
+  top: 145px;
+}
+#hurricanes.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/carolina.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#blackhawks.button {
+  background: #ff0d20;
+  top: 174px;
+}
+#blackhawks.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/chicago.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#avalanche.button {
+  background: #6F263D;
+  top: 203px;
+}
+#avalanche.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/colorado.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#jackets.button {
+  background: #002654;
+  top: 232px;
+}
+#jackets.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/columbus.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#stars.button {
+  background: #006847;
+  top: 261px;
+}
+#stars.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/dallas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#wings.button {
+  background: #ce1126;
+  top: 290px;
+}
+#wings.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/detroit.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#oilers.button {
+  background: #fc4b00;
+  top: 319px;
+}
+#oilers.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/edmonton.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#panthers.button {
+  background: #c8102E;
+  top: 348px;
+}
+#panthers.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/florida.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#kings.button {
+  background: #000000;
+  top: 377px;
+}
+#kings.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/la.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#wild.button {
+  background: #154734;
+  top: 406px;
+}
+#wild.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/minnesota.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#canadiens.button {
+  background: #AF1E2D;
+  top: 435px;
+}
+#canadiens.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/montreal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#predators.button {
+  background: #FFB81C;
+  top: 464px;
+}
+#predators.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/nashville.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#devils.button {
+  background: #CE1126;
+  top: 493px;
+}
+#devils.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/newjersey.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#islanders.button {
+  background: #00539b;
+  top: 522px;
+}
+#islanders.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/newyorki.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#rangers.button {
+  background: #0038A8;
+  top: 551px;
+}
+#rangers.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/newyorkr.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#senators.button {
+  background: #db132e;
+  top: 580px;
+}
+#senators.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/ottawa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#flyers.button {
+  background: #F74902;
+  top: 609px;
+}
+#flyers.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/philadelphia.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#penguins.button {
+  background: #000000;
+  top: 638px;
+}
+#penguins.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/pittsburgh.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#sharks.button {
+  background: #006D75;
+  top: 667px;
+}
+#sharks.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/sanjose.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#blues.button {
+  background: #002F87;
+  top: 696px;
+}
+#blues.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/stlouis.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#kraken.button {
+  background: #99d9d9;
+  top: 725px;
+}
+#kraken.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/seattle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#lightning.button {
+  background: #002368;
+  top: 754px;
+}
+#lightning.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/tampa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#leafs.button {
+  background: #001a5b;
+  top: 783px;
+}
+#leafs.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/toronto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#canucks.button {
+  background: #002955;
+  top: 812px;
+}
+#canucks.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/vancouver.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#knights.button {
+  background: #B4975A;
+  top: 841px;
+}
+#knights.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/vegas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#capitals.button {
+  background: #e51535;
+  top: 870px;
+}
+#capitals.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/washington2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+#jets.button {
+  background: #041E42;
+  top: 898px;
+}
+#jets.button:hover {
+  background-image: url("file:///C:/Users/yan/Desktop/Draft/img/winnipeg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+.button:hover {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.trigger-area {
+  position: absolute;
+  background: rgba(255, 0, 0, 0);
+  width: 20px;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+}
+.trigger-area2 {
+  position: absolute;
+  background: rgba(255, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  left: 5%;
+  top: 0%;
+}
+.number {
+  position: absolute;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(33, 41, 50);
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+.number1 {
+  position: absolute;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #212932;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+.positionSquare {
+  position: absolute;
+  display: block;
+  background-color: #212932;
+  width: 50px;
+  height: 50px;
+}
+.one {
+  left: 150px;
+  top: 180px;
+}
+.logo-one {
+  left: 200px;
+  top: 180px;
+}
+.logo-one-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 180px;
+}
+.two {
+  left: 150px;
+  top: 240px;
+}
+.logo-two {
+  left: 200px;
+  top: 240px;
+}
+.logo-two-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 240px;
+}
+.three {
+  left: 150px;
+  top: 300px;
+}
+.logo-three {
+  left: 200px;
+  top: 300px;
+}
+.logo-three-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 300px;
+}
+.four {
+  left: 150px;
+  top: 360px;
+}
+.logo-four {
+  left: 200px;
+  top: 360px;
+}
+.logo-four-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 360px;
+}
+.five {
+  left: 150px;
+  top: 420px;
+}
+.logo-five {
+  left: 200px;
+  top: 420px;
+}
+.logo-five-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 420px;
+}
+.six {
+  left: 150px;
+  top: 480px;
+}
+.logo-six {
+  left: 200px;
+  top: 480px;
+}
+.logo-six-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 480px;
+}
+.seven {
+  left: 150px;
+  top: 540px;
+}
+.logo-seven {
+  left: 200px;
+  top: 540px;
+}
+.logo-seven-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 540px;
+}
+.eight {
+  left: 150px;
+  top: 600px;
+}
+.logo-eight {
+  left: 200px;
+  top: 600px;
+}
+.logo-eight-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 600px;
+}
+.nine {
+  left: 150px;
+  top: 660px;
+}
+.logo-nine {
+  left: 200px;
+  top: 660px;
+}
+.logo-nine-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 660px;
+}
+.ten {
+  left: 150px;
+  top: 720px;
+}
+.logo-ten {
+  left: 200px;
+  top: 720px;
+}
+.logo-ten-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 720px;
+}
+.eleven {
+  left: 150px;
+  top: 780px;
+}
+.logo-eleven {
+  left: 200px;
+  top: 780px;
+}
+.logo-eleven-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 200px;
+  top: 780px;
+}
+.twelve {
+  left: 600px;
+  top: 180px;
+}
+.logo-twelve {
+  left: 650px;
+  top: 180px;
+}
+.logo-twelve-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 650px;
+  top: 180px;
+}
+.thirteen {
+  left: 600px;
+  top: 240px;
+}
+.logo-thirteen {
+  left: 650px;
+  top: 240px;
+}
+.logo-thirteen-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 650px;
+  top: 240px;
+}
+.fourteen {
+  left: 600px;
+  top: 300px;
+}
+.logo-fourteen {
+  left: 650px;
+  top: 300px;
+}
+.logo-fourteen-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 650px;
+  top: 300px;
+}
+.fiveteen {
+  left: 600px;
+  top: 360px;
+}
+.logo-fiveteen {
+  left: 650px;
+  top: 360px;
+}
+.logo-fiveteen-copy {
+  background: rgba(255, 0, 0, 0);
+  left: 650px;
+  top: 360px;
+}
+.sixteen {
+  left: 600px;
+  top: 420px;
+}
+.logo-sixteen {
+  left: 650px;
+  top: 420px;
+}
+.seventeen {
+  left: 600px;
+  top: 480px;
+}
+.logo-seventeen {
+  left: 650px;
+  top: 480px;
+}
+.eighteen {
+  left: 600px;
+  top: 540px;
+}
+.logo-eighteen {
+  left: 650px;
+  top: 540px;
+}
+.nineteen {
+  left: 600px;
+  top: 600px;
+}
+.logo-nineteen {
+  left: 650px;
+  top: 600px;
+}
+.twenty {
+  left: 600px;
+  top: 660px;
+}
+.logo-twenty {
+  left: 650px;
+  top: 660px;
+}
+.twenty-one {
+  left: 600px;
+  top: 720px;
+}
+.logo-twenty-one {
+  left: 650px;
+  top: 720px;
+}
+.twenty-two {
+  left: 600px;
+  top: 780px;
+}
+.logo-twenty-two {
+  left: 650px;
+  top: 780px;
+}
+.twenty-three {
+  left: 1050px;
+  top: 180px;
+}
+.logo-twenty-three {
+  left: 1100px;
+  top: 180px;
+}
+.twenty-four {
+  left: 1050px;
+  top: 240px;
+}
+.logo-twenty-four {
+  left: 1100px;
+  top: 240px;
+}
+.twenty-five {
+  left: 1050px;
+  top: 300px;
+}
+.logo-twenty-five {
+  left: 1100px;
+  top: 300px;
+}
+.twenty-six {
+  left: 1050px;
+  top: 360px;
+}
+.logo-twenty-six {
+  left: 1100px;
+  top: 360px;
+}
+.twenty-seven {
+  left: 1050px;
+  top: 420px;
+}
+.logo-twenty-seven {
+  left: 1100px;
+  top: 420px;
+}
+.twenty-eight {
+  left: 1050px;
+  top: 480px;
+}
+.logo-twenty-eight {
+  left: 1100px;
+  top: 480px;
+}
+.twenty-nine {
+  left: 1050px;
+  top: 540px;
+}
+.logo-twenty-nine {
+  left: 1100px;
+  top: 540px;
+}
+.thirty {
+  left: 1050px;
+  top: 600px;
+}
+.logo-thirty {
+  left: 1100px;
+  top: 600px;
+}
+.thirty-one {
+  left: 1050px;
+  top: 660px;
+}
+.logo-thirty-one {
+  left: 1100px;
+  top: 660px;
+}
+.thirty-two {
+  left: 1050px;
+  top: 720px;
+}
+.logo-thirty-two {
+  left: 1100px;
+  top: 720px;
+}
